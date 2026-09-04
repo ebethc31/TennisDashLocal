@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+/* Entire screen split in half */
+.split-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Each side */
+.half {
+  flex: 1;
+
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  align-items: flex-start;
+
+  overflow: hidden;
+}
+
+
+/* Large image */
+.large-image {
+  width: 80%;
+  min-height: 80vh;
+
+  object-fit: contain;
+}
+
+/* Small image */
+.small-image {
+  width: clamp(150px, 30vw, 300px);
+  height: auto;
+  padding-top: 60px; 
+
+  object-fit: contain;
+}

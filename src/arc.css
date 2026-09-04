@@ -1,0 +1,12 @@
+.video-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+.video-page video {
+  width: 100%;
+  max-width: auto;
+  height: auto;
+}

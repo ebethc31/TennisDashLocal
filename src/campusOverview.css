@@ -1,0 +1,11 @@
+.image-page {
+  height: 80vh;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+.image-page img {
+  width: 120%;
+  height: 120%;
+}

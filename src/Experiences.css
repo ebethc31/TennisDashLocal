@@ -1,0 +1,104 @@
+/* Remove default browser spacing */
+body {
+  margin: 0;
+}
+
+/* Full screen overlay */
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Rectangle card */
+.card {
+  background-color: #B3A3C7;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+
+  width: min(90%, 1000px);
+  min-height: 250px;
+
+  padding: clamp(20px, 4vw, 40px);
+  box-sizing: border-box;
+}
+
+/* Bold text */
+.card-text {
+  flex: 1;
+
+  text-align: left;
+  margin: 0;
+
+  font-weight: bold;
+  font-size: clamp(1.5rem, 3vw, 3.5rem);
+  color: #333;
+  line-height: 1.2;
+}
+
+/* QR section */
+.qr-section {
+  display: flex;
+  gap: clamp(8px, 1vw, 16px);
+
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* Individual QR code + subtitle */
+.qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* QR images */
+.card-image {
+  width: clamp(120px, 15vw, 180px);
+  height: auto;
+
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* Subtitle */
+.qr-subtitle {
+  margin-top: 8px;
+  margin-bottom: 0;
+
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .qr-section {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card-image {
+    width: clamp(100px, 30vw, 150px);
+  }
+}
